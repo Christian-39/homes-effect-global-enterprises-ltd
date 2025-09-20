@@ -147,6 +147,12 @@
 
     <!-- JavaScript for Mobile Menu -->
     <script src="script.js">
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
         // Node + Express example
         const OWNER_WHATSAPP_NUMBER = "2348035296967"; // <- replace with owner's number
 

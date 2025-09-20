@@ -134,7 +134,14 @@
     </footer>
 
     <!-- JavaScript for Mobile Menu -->
-    <script src="script.js"></script>
+    <script src="script.js">
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
