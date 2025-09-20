@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homes Effect Global Enterprises. - Our Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .product-thumbnail {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.2s ease-in-out;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-thumbnail.active {
+            border-color: #1a202c;
+            /* Tailwind's gray-900 */
+        }
+
+        .product-image {
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm p-4 md:p-6 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html"
+                class="flex items-center space-x-2 md:space-x-3 text-xl md:text-2xl font-semibold text-gray-900">
+                <!-- HOMES EFFECT GLOBAL ENTERPRISES Logo SVG -->
+                <svg class="w-9 h-9 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24 2.5L2.5 24l21.5 21.5L45.5 24zM24 6.5L6.5 24 24 41.5 41.5 24zM24 10.5L10.5 24 24 37.5 37.5 24z"
+                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>Homes Effect Global Enterprises.</span>
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="/ezesonltd/about.html"
+                    class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">About
+                    Us</a>
+                <a href="/ezesonltd/products.html"
+                    class="text-lg font-medium text-gray-900  transition-colors duration-300">Products</a>
+                <a href="/ezesonltd/index.html#testimonials"
+                    class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Testimonials</a>
+                <a href="/ezesonltd/contacts.html"
+                    class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg p-4">
+            <nav class="flex flex-col space-y-4">
+                <a href="/ezesonltd/about.html"
+                    class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">About
+                    Us</a>
+                <a href="/ezesonltd/products.html"
+                    class="text-lg font-medium text-gray-900  transition-colors duration-300">Products</a>
+                <a href="/ezesonltd/index.html#testimonials"
+                    class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Testimonials</a>
+                <a href="/ezesonltd/contacts.html"
+                    class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Products Page Hero Section -->
+        <section class="relative bg-gradient-to-r from-gray-900 to-gray-800 py-24 md:py-32">
+            <div class="container mx-auto px-4 z-10 text-white text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Explore Our Full Range</h1>
+                <p class="mt-4 md:mt-6 text-xl md:text-2xl font-light max-w-4xl mx-auto">
+                    From luxurious surfacetops to essential fabrication tools, find everything you need to create a
+                    stunning kitchen.
+                </p>
+            </div>
+        </section>
+
+        <!-- Product Listings Section -->
+        <section class="bg-gray-100 py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Our Products</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+                    id="product-cards-container">
+                    <!-- Product Card 1: Corian Surfacetop -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                        <img src="/ezesonltd/static/Rajnagar-White-Marble-Slabs-Polished-White-Marble-Slabs2018111174922.jpg"
+                            alt="Arctic White Corian Surfacetop"
+                            class="rounded-lg mb-4 w-full h-48 object-cover product-image">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 product-name">Arctic White Corian Surfacetop
+                        </h3>
+                        <p class="text-gray-600 mb-2 flex-grow product-description">A pristine, seamless, and durable
+                            surface perfect for modern kitchen countertops and backsplashes.</p>
+                        <p class="text-2xl font-bold text-gray-900 mb-4 product-price">$300 / sq. ft.</p>
+                        <div class="flex space-x-2 mt-auto mb-4">
+                            <img class="product-thumbnail active"
+                                src="/ezesonltd/static/Rajnagar-White-Marble-Slabs-Polished-White-Marble-Slabs2018111174922.jpg"
+                                alt="Arctic White thumbnail"
+                                data-image="/ezesonltd/static/Rajnagar-White-Marble-Slabs-Polished-White-Marble-Slabs2018111174922.jpg"
+                                data-name="Arctic White Corian Surfacetop"
+                                data-description="A pristine, seamless, and durable surface perfect for modern kitchen countertops and backsplashes."
+                                data-price="$300 / sq. ft."
+                                data-link="/ezesonltd/product-details/white-corian-top.html?id=corian-arctic-white">
+                            <img class="product-thumbnail" src="/ezesonltd/static/black-thumbnail-corian-top.jpg"
+                                alt="Black thumbnail" data-image="/ezesonltd/static/black-corian-top.jpg"
+                                data-name="Black Corian Surfacetop"
+                                data-description="A dark, elegant surface with fine specks, adding a sophisticated touch to any space."
+                                data-price="$320 / sq. ft." data-link="product-details.html?id=corian-night-sky">
+                            <img class="product-thumbnail" src="https://placehold.co/48x48/F5E9D8/5A4E3A?text=SS"
+                                alt="Sandstone thumbnail"
+                                data-image="https://placehold.co/400x300/F5E9D8/5A4E3A?text=Sandstone+Corian"
+                                data-name="Sandstone Corian Surfacetop"
+                                data-description="A warm, earthy tone that brings a natural and inviting feel to your kitchen design."
+                                data-price="$310 / sq. ft." data-link="product-details.html?id=corian-sandstone">
+                        </div>
+                        <a href="product-details.html?id=corian-arctic-white"
+                            class="inline-block text-gray-900 font-semibold border-b-2 border-gray-900 hover:border-gray-700 transition-colors duration-300 product-link">View
+                            Details &rarr;</a>
+                    </div>
+
+                    <!-- Product Card 2: Carrara Marble Slab -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                        <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Carrara+White"
+                            alt="White Carrara Marble Slab"
+                            class="rounded-lg mb-4 w-full h-48 object-cover product-image">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 product-name">White Carrara Marble Slab</h3>
+                        <p class="text-gray-600 mb-2 flex-grow product-description">A classic natural stone with elegant
+                            gray veining, adding a touch of luxury to any kitchen.</p>
+                        <p class="text-2xl font-bold text-gray-900 mb-4 product-price">$450 / sq. ft.</p>
+                        <div class="flex space-x-2 mt-auto mb-4">
+                            <img class="product-thumbnail active" src="https://placehold.co/48x48/e5e7eb/4b5563?text=CW"
+                                alt="White Carrara thumbnail"
+                                data-image="https://placehold.co/400x300/e5e7eb/4b5563?text=Carrara+White"
+                                data-name="White Carrara Marble Slab"
+                                data-description="A classic natural stone with elegant gray veining, adding a touch of luxury to any kitchen."
+                                data-price="$450 / sq. ft." data-link="product-details.html?id=marble-carrara-white">
+                            <img class="product-thumbnail" src="https://placehold.co/48x48/9CA3AF/374151?text=CG"
+                                alt="Gray Carrara thumbnail"
+                                data-image="https://placehold.co/400x300/9CA3AF/374151?text=Carrara+Gray"
+                                data-name="Gray Carrara Marble Slab"
+                                data-description="A striking variation with more pronounced gray patterns for a bold statement."
+                                data-price="$480 / sq. ft." data-link="product-details.html?id=marble-carrara-gray">
+                        </div>
+                        <a href="product-details.html?id=marble-carrara-white"
+                            class="inline-block text-gray-900 font-semibold border-b-2 border-gray-900 hover:border-gray-700 transition-colors duration-300 product-link">View
+                            Details &rarr;</a>
+                    </div>
+
+                    <!-- Product Card 3: Built-in Oven -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                        <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Stainless+Steel+Oven"
+                            alt="Stainless Steel Built-in Oven"
+                            class="rounded-lg mb-4 w-full h-48 object-cover product-image">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 product-name">Stainless Steel Built-in Oven
+                        </h3>
+                        <p class="text-gray-600 mb-2 flex-grow product-description">A high-performance electric oven
+                            with multiple cooking functions and a sleek, stainless steel finish.</p>
+                        <p class="text-2xl font-bold text-gray-900 mb-4 product-price">$950</p>
+                        <div class="flex space-x-2 mt-auto mb-4">
+                            <img class="product-thumbnail active" src="https://placehold.co/48x48/D1D5DB/374151?text=SS"
+                                alt="Stainless Steel Oven thumbnail"
+                                data-image="https://placehold.co/400x300/e5e7eb/4b5563?text=Stainless+Steel+Oven"
+                                data-name="Stainless Steel Built-in Oven"
+                                data-description="A high-performance electric oven with multiple cooking functions and a sleek, stainless steel finish."
+                                data-price="$950" data-link="product-details.html?id=oven-stainless-steel">
+                            <img class="product-thumbnail" src="https://placehold.co/48x48/1F2937/F3F4F6?text=MB"
+                                alt="Matte Black Oven thumbnail"
+                                data-image="https://placehold.co/400x300/1F2937/F3F4F6?text=Matte+Black+Oven"
+                                data-name="Matte Black Built-in Oven"
+                                data-description="An oven with a modern matte black finish that complements contemporary kitchen designs."
+                                data-price="$980" data-link="product-details.html?id=oven-matte-black">
+                        </div>
+                        <a href="product-details.html?id=oven-stainless-steel"
+                            class="inline-block text-gray-900 font-semibold border-b-2 border-gray-900 hover:border-gray-700 transition-colors duration-300 product-link">View
+                            Details &rarr;</a>
+                    </div>
+
+                    <!-- Product Card 4: 4-Burner Gas Cooktop -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                        <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Steel+Cooktop"
+                            alt="Stainless Steel Gas Cooktop"
+                            class="rounded-lg mb-4 w-full h-48 object-cover product-image">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 product-name">Stainless Steel Gas Cooktop
+                        </h3>
+                        <p class="text-gray-600 mb-2 flex-grow product-description">A professional-grade gas cooktop
+                            with powerful burners and precise heat control.</p>
+                        <p class="text-2xl font-bold text-gray-900 mb-4 product-price">$780</p>
+                        <div class="flex space-x-2 mt-auto mb-4">
+                            <img class="product-thumbnail active" src="https://placehold.co/48x48/D1D5DB/374151?text=SS"
+                                alt="Stainless Steel Cooktop thumbnail"
+                                data-image="https://placehold.co/400x300/e5e7eb/4b5563?text=Steel+Cooktop"
+                                data-name="Stainless Steel Gas Cooktop"
+                                data-description="A professional-grade gas cooktop with powerful burners and precise heat control."
+                                data-price="$780" data-link="product-details.html?id=cooktop-stainless-steel">
+                            <img class="product-thumbnail" src="https://placehold.co/48x48/1F2937/F3F4F6?text=BG"
+                                alt="Black Glass Cooktop thumbnail"
+                                data-image="https://placehold.co/400x300/1F2937/F3F4F6?text=Black+Cooktop"
+                                data-name="Black Glass Gas Cooktop"
+                                data-description="A minimalist black glass cooktop that is both elegant and easy to clean."
+                                data-price="$820" data-link="product-details.html?id=cooktop-black-glass">
+                        </div>
+                        <a href="product-details.html?id=cooktop-stainless-steel"
+                            class="inline-block text-gray-900 font-semibold border-b-2 border-gray-900 hover:border-gray-700 transition-colors duration-300 product-link">View
+                            Details &rarr;</a>
+                    </div>
+
+                    <!-- Product Card 5: High-Strength Epoxy Adhesive -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                        <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Clear+Adhesive"
+                            alt="Clear Epoxy Adhesive" class="rounded-lg mb-4 w-full h-48 object-cover product-image">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 product-name">Clear Epoxy Adhesive</h3>
+                        <p class="text-gray-600 mb-2 flex-grow product-description">A transparent, two-part adhesive
+                            designed for a strong, invisible bond on stone and solid surfaces.</p>
+                        <p class="text-2xl font-bold text-gray-900 mb-4 product-price">$45</p>
+                        <div class="flex space-x-2 mt-auto mb-4">
+                            <img class="product-thumbnail active" src="https://placehold.co/48x48/FFFFFF/000000?text=CL"
+                                alt="Clear Adhesive thumbnail"
+                                data-image="https://placehold.co/400x300/e5e7eb/4b5563?text=Clear+Adhesive"
+                                data-name="Clear Epoxy Adhesive"
+                                data-description="A transparent, two-part adhesive designed for a strong, invisible bond on stone and solid surfaces."
+                                data-price="$45" data-link="product-details.html?id=adhesive-clear">
+                            <img class="product-thumbnail" src="https://placehold.co/48x48/F3EFE0/5A4E3A?text=BE"
+                                alt="Beige Adhesive thumbnail"
+                                data-image="https://placehold.co/400x300/F3EFE0/5A4E3A?text=Beige+Adhesive"
+                                data-name="Beige Epoxy Adhesive"
+                                data-description="An adhesive with a beige pigment, ideal for seamless bonds on light-colored natural stone."
+                                data-price="$45" data-link="product-details.html?id=adhesive-beige">
+                        </div>
+                        <a href="product-details.html?id=adhesive-clear"
+                            class="inline-block text-gray-900 font-semibold border-b-2 border-gray-900 hover:border-gray-700 transition-colors duration-300 product-link">View
+                            Details &rarr;</a>
+                    </div>
+
+                    <!-- Product Card 6: Diamond Polishing Pads -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                        <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Polishing+Pads"
+                            alt="Diamond Polishing Pads" class="rounded-lg mb-4 w-full h-48 object-cover product-image">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 product-name">Diamond Polishing Pads</h3>
+                        <p class="text-gray-600 mb-2 flex-grow product-description">A complete set of diamond pads for
+                            achieving a professional, high-gloss finish.</p>
+                        <p class="text-2xl font-bold text-gray-900 mb-4 product-price">$85</p>
+                        <div class="flex space-x-2 mt-auto mb-4">
+                            <img class="product-thumbnail active" src="https://placehold.co/48x48/F1F5F9/1a202c?text=DP"
+                                alt="Diamond Polishing Pads thumbnail"
+                                data-image="https://placehold.co/400x300/e5e7eb/4b5563?text=Polishing+Pads"
+                                data-name="Diamond Polishing Pads"
+                                data-description="A complete set of diamond pads for achieving a professional, high-gloss finish."
+                                data-price="$85" data-link="product-details.html?id=pads-diamond">
+                        </div>
+                        <a href="product-details.html?id=pads-diamond"
+                            class="inline-block text-gray-900 font-semibold border-b-2 border-gray-900 hover:border-gray-700 transition-colors duration-300 product-link">View
+                            Details &rarr;</a>
+                    </div>
+
+                    <!-- Product Card 7: Undermount Sink -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                        <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Undermount+Sink"
+                            alt="Stainless Steel Undermount Sink"
+                            class="rounded-lg mb-4 w-full h-48 object-cover product-image">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 product-name">Stainless Steel Undermount
+                            Sink</h3>
+                        <p class="text-gray-600 mb-2 flex-grow product-description">A sleek, single-basin stainless
+                            steel sink that installs seamlessly under your countertop.</p>
+                        <p class="text-2xl font-bold text-gray-900 mb-4 product-price">$250</p>
+                        <div class="flex space-x-2 mt-auto mb-4">
+                            <img class="product-thumbnail active" src="https://placehold.co/48x48/D1D5DB/374151?text=SS"
+                                alt="Undermount Sink thumbnail"
+                                data-image="https://placehold.co/400x300/e5e7eb/4b5563?text=Undermount+Sink"
+                                data-name="Stainless Steel Undermount Sink"
+                                data-description="A sleek, single-basin stainless steel sink that installs seamlessly under your countertop."
+                                data-price="$250" data-link="product-details.html?id=sink-undermount">
+                        </div>
+                        <a href="product-details.html?id=sink-undermount"
+                            class="inline-block text-gray-900 font-semibold border-b-2 border-gray-900 hover:border-gray-700 transition-colors duration-300 product-link">View
+                            Details &rarr;</a>
+                    </div>
+
+                    <!-- Product Card 8: Pull-Down Faucet -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                        <img src="https://placehold.co/400x300/1F2937/F3F4F6?text=Matte+Black+Faucet"
+                            alt="Matte Black Pull-Down Faucet"
+                            class="rounded-lg mb-4 w-full h-48 object-cover product-image">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 product-name">Matte Black Pull-Down Faucet
+                        </h3>
+                        <p class="text-gray-600 mb-2 flex-grow product-description">A modern, pull-down faucet with a
+                            matte black finish and a high-arch spout for easy cleaning.</p>
+                        <p class="text-2xl font-bold text-gray-900 mb-4 product-price">$180</p>
+                        <div class="flex space-x-2 mt-auto mb-4">
+                            <img class="product-thumbnail active" src="https://placehold.co/48x48/111827/F3F4F6?text=MB"
+                                alt="Matte Black Faucet thumbnail"
+                                data-image="https://placehold.co/400x300/1F2937/F3F4F6?text=Matte+Black+Faucet"
+                                data-name="Matte Black Pull-Down Faucet"
+                                data-description="A modern, pull-down faucet with a matte black finish and a high-arch spout for easy cleaning."
+                                data-price="$180" data-link="product-details.html?id=faucet-matte-black">
+                            <img class="product-thumbnail" src="https://placehold.co/48x48/C0C0C0/374151?text=BN"
+                                alt="Brushed Nickel Faucet thumbnail"
+                                data-image="https://placehold.co/400x300/C0C0C0/374151?text=Brushed+Nickel"
+                                data-name="Brushed Nickel Pull-Down Faucet"
+                                data-description="A durable faucet with a brushed nickel finish that resists fingerprints and water spots."
+                                data-price="$210" data-link="product-details.html?id=faucet-brushed-nickel">
+                        </div>
+                        <a href="product-details.html?id=faucet-matte-black"
+                            class="inline-block text-gray-900 font-semibold border-b-2 border-gray-900 hover:border-gray-700 transition-colors duration-300 product-link">View
+                            Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+        <p>&copy; 2024 Homes Effect Global Enterprises. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Dynamic Content -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Get all product thumbnail elements on the page
+            const thumbnails = document.querySelectorAll('.product-thumbnail');
+
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', (e) => {
+                    // Find the parent product card element
+                    const cardElement = e.target.closest('.bg-white');
+
+                    // Get the new data from the clicked thumbnail's data attributes
+                    const newImageSrc = e.target.dataset.image;
+                    const newName = e.target.dataset.name;
+                    const newDescription = e.target.dataset.description;
+                    const newPrice = e.target.dataset.price;
+                    const newLink = e.target.dataset.link;
+
+                    // Update all product details and the link
+                    cardElement.querySelector('.product-image').src = newImageSrc;
+                    cardElement.querySelector('.product-image').alt = newName;
+                    cardElement.querySelector('.product-name').textContent = newName;
+                    cardElement.querySelector('.product-description').textContent = newDescription;
+                    cardElement.querySelector('.product-price').textContent = newPrice;
+                    cardElement.querySelector('.product-link').href = newLink;
+
+                    // Remove 'active' class from all thumbnails in this card
+                    const siblingThumbnails = cardElement.querySelectorAll('.product-thumbnail');
+                    siblingThumbnails.forEach(t => t.classList.remove('active'));
+
+                    // Add 'active' class to the clicked thumbnail
+                    e.target.classList.add('active');
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

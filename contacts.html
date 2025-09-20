@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homes Effect Global Enterprises. - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm p-4 md:p-6 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/ezesonltd/index.html"
+                class="flex items-center space-x-2 md:space-x-3 text-xl md:text-2xl font-semibold text-gray-900">
+                <!-- Ezeson Ltd. Logo SVG -->
+                <svg class="w-9 h-9 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24 2.5L2.5 24l21.5 21.5L45.5 24zM24 6.5L6.5 24 24 41.5 41.5 24zM24 10.5L10.5 24 24 37.5 37.5 24z"
+                        fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>Homes Effect Global Enterprises.</span>
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="/ezesonltd/about.html"
+                    class="text-lg font-medium text-gray-900 transition-colors duration-300">About Us</a>
+                <a href="/ezesonltd/products.html"
+                    class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Products</a>
+                <a href="/ezesonltd/index.html#testimonials"
+                    class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Testimonials</a>
+                <a href="/ezesonltd/contacts.html"
+                    class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg p-4">
+            <nav class="flex flex-col space-y-4">
+                <a href="/ezesonltd/about.html"
+                    class="text-lg font-medium text-gray-900 transition-colors duration-300">About Us</a>
+                <a href="/ezesonltd/products.html"
+                    class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Products</a>
+                <a href="/ezesonltd/index.html#testimonials"
+                    class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Testimonials</a>
+                <a href="/ezesonltd/contacts.html"
+                    class="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Page Hero Section -->
+        <section class="relative bg-gradient-to-r from-gray-900 to-gray-800 py-24 md:py-32">
+            <div class="container mx-auto px-4 z-10 text-white text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Get In Touch</h1>
+                <p class="mt-4 md:mt-6 text-xl md:text-2xl font-light max-w-4xl mx-auto">
+                    We'd love to hear from you. Fill out the form below or contact us directly.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Form and Info Section -->
+        <section class="bg-gray-100 py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 bg-white p-8 rounded-xl shadow-lg">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+                        <form action="#" method="POST" class="space-y-6" id="contactForm">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                <input type="email" id="email" name="email" required
+                                    class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Your
+                                    Message</label>
+                                <textarea id="message" name="message" rows="5" required
+                                    class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-gray-500 focus:border-gray-500"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit"
+                                    class="w-full inline-flex justify-center py-3 px-6 border border-transparent rounded-md shadow-sm text-base font-semibold text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                                    Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info and Map -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6">Our Information</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-3">
+                                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.003 5.884L10 12l7.997-6.116A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                                    </path>
+                                    <path d="M18 8.118l-8 6-8-6V15a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                </svg>
+                                <span>izuchukwujude2009@gmail.com</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.101 6.101l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.96 18 3 13.04 3 7V5z">
+                                    </path>
+                                </svg>
+                                <span>+234 803 529 6967</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Our Location</h3>
+                                <div class="aspect-w-16 aspect-h-9 w-full rounded-xl overflow-hidden shadow-xl">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!4v1758358689235!6m8!1m7!1sh_aFfzQ90MF9zFUAJ7yLdw!2m2!1d6.524161929795194!2d3.346019439174702!3f55.355865606794296!4f-3.3337142430274156!5f0.7820865974627469"
+                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+        <p>&copy; 2024 Homes Effect Global Enterprises. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script src="script.js">
+        // Node + Express example
+        const OWNER_WHATSAPP_NUMBER = "2348035296967"; // <- replace with owner's number
+
+        const form = document.getElementById('contactForm');
+
+        function sanitize(s) {
+            return String(s || '').trim();
+        }
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = sanitize(document.getElementById('name').value);
+            const email = sanitize(document.getElementById('email').value);
+            const message = sanitize(document.getElementById('message').value);
+
+
+
+            // build WhatsApp message template
+            const text = [
+                `New contact from website:`,
+                `Name: ${name}`,
+                `Email: ${email}`,
+                ``,
+                `Message:`,
+                message
+            ].filter(Boolean).join('\n');
+
+            const encoded = encodeURIComponent(text);
+
+            // WhatsApp universal URL
+            const waUrl = `https://wa.me/${OWNER_WHATSAPP_NUMBER}?text=${encoded}`;
+
+            // Open in new tab/window so the user stays on site (or use location.href to redirect)
+            window.open(waUrl, '_blank');
+        })
+    </script>
+
+</body>
+
+</html>
